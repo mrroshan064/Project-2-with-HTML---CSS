@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding:10px;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    max-width:80%;
+    margin:auto;
+    display: grid;
+    grid-template-areas: ". head head head head ." 
+    ". banner banner banner banner . "
+    ". left mid1 mid2 right ."
+    ". banner1 banner1 banner1 banner1 .";
+    gap: 20px;
+    
+}
+.box{
+    padding:20px;
+    /* border:2px solid black; */
+    
+}
+.box1{
+    grid-area: head;
+    display:grid;
+    grid-template-columns:11% 1fr 4%;
+    justify-content: space-between;
+    align-items: center;
+    /* align-content: center; */
+}
+.logo{
+    width:110px;
+}
+.box2{
+    grid-area: banner;
+    width: 100%;
+    height: 500px;
+    background: url(../image/showcase.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.box3{
+    grid-area: left;
+    margin-bottom: 40px;
+    
+}
+.img{
+    width: 100%;
+   margin-bottom: 20px;
+}
+
+.box4{
+    grid-area: mid1;
+    margin-bottom: 40px;
+    
+}
+.box5{ 
+    grid-area: mid2;
+    margin-bottom: 40px;
+}
+.box6{ 
+    grid-area:right;
+    margin-bottom: 40px;
+}
+.box7{ 
+    grid-area: banner1;
+    height: 450px;
+    width: 100%;
+    background: url(../image/xbox.png) no-repeat center center/cover;
+    margin-bottom: 20px;
+}
